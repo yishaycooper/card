@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link to Font Awesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Custom Style Sheet -->
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ccc;
+}
+
+.card-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+}
+
+.card {
+    width: 550px;
+    height: 300px;
+    background-color: #fff;
+    transform-style: preserve-3d;
+    position: relative;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    transition: transform 1s;
+}
+
+
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: inherit;
+}
+
+.card-front {
+    display: flex;
+    background: linear-gradient(100deg, rgb(255, 255, 255) 40%, rgb(38, 38, 38) 0)
+}
+
+.left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img {
+    width: 100%;
+}
+
+.right  {
+    width: 60%;
+    color: #fff;
+}
+
+a  {
+    width: 60%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.person {
+    background-color: #1187ac;
+    padding: 5px 0 5px 30px;
+    margin: 30px 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.right-content i {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1187ac;
+    margin-right: 20px;
+}
+
+.person h4 {
+    text-transform: uppercase;
+}
+
+.phone {
+    padding-left: 30px;
+}
+
+.email {
+    padding-left: 20px;
+}
+
+.location {
+    padding-left: 10px;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="card-wrapper">
+        <div class="card">
+            <div class="card-front">
+                <div class="left">
+                    <img src="./LOGO1.png" alt="">
+                </div>
+                <div class="right">
+                    <div class="person right-content">
+                        <p><a href="https://wa.me/972538281820"><i class="fab fa-whatsapp"></i></a></p>
+                        
+                        <!-- <i class="fas fa-user-alt"></i> -->
+                        <div>
+                            <h4>Chava Cooper</h4>
+                            <p>Graphic Design</p>
+                        </div>
+                    </div>
+
+                    <a href="tel:972538281820">
+                    <div class="phone right-content">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div>
+                            0538281820
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href = "mailto: chavacooper1@gmail.com">
+                    <div class="email right-content">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <div>
+                            <p>chavacooper1@gmail.com</p>
+                        </div>
+                    </div>
+                    </a>
+
+                    <a href="https://maps.google.com/?q=31.706309079211028,35.12056507127439">            
+                    <div class="location right-content">
+                        
+                            <i class="fas fa-map-marker-alt"></i>
+                       
+                        
+                        <div>
+                            <p>Location</p>
+                        </div>
+                    </div>
+                </a>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+</body>
+
+</html>
